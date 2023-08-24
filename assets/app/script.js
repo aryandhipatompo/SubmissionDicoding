@@ -22,23 +22,24 @@ function slidersLayanan()
 {
 	const sliders2 = document.querySelectorAll(".slider2");
 
-	for (let i = 0; i < sliders2.length; i++)
+	for (let j = 0; j < sliders2.length; j++)
 	{
-		sliders2[i].style.display = "none";
+		sliders2[j].style.display = "none";
 	}
 
-	if (start >= sliders2.length)
+	if (start2 >= sliders2.length)
 	{
-		start = 0;
+		start2 = 0;
 	}
 
-	sliders2[start].style.display = "block";
-	start++;
+	sliders2[start2].style.display = "block";
+	start2++;
 
 	setTimeout(slidersLayanan, 1500);
 }
 
 let start = 0;
+let start2 = 0
 slidersFasilitas();
 slidersLayanan();
 
