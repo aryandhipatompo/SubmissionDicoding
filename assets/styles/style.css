@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  header {
+    display: inline;
+  }
+
+  .banner {
+    font-size: 30px;
+    padding: 60px;
+    background-image: url("../image/banner.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+  }
+
+  .banner h5 {
+    color: rgb(255, 247, 0);
+    font-weight: bolder;
+    text-shadow: -3px -2px 0.5px rgb(0, 0, 0);
+  }
+
+  h1 {
+    color: red;
+    font-family: 'BlackChancery';
+    text-shadow: 3px 4px 2px black;
+  }
+   
+  h2, h3 {
+    color: #BB2525;
+  }
+
+  nav {
+    background-color: #FFF5E0;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+  }
+
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+   
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+  }
+
+  nav a:hover {
+    font-weight: bold;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .profile header {
+    text-align: center;
+  }
+
+  .featured-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .profile img {
+    width: 200px;
+    border-radius: 15px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  main {
+    padding: 40px;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  #content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+  aside {
+    flex: 1;
+  }
+
+  aside h3 {
+    text-align: center;
+  }
+
+  aside table, th, td {
+    font-size: small;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  main aside .social-media {
+    height: 150%;
+    display: flex;
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+  }
+   
+  main aside .social-media ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #BB2525;
+  }
+   
+  main aside .social-media li {
+    list-style-type: none;
+  }
+
+  main aside .social-media li a {
+    font-size: 1rem;
+    color: white;
+    transition: all .1s ease-in-out;
+  }
+   
+  main aside .social-media li a:hover {
+    color: #141E46;
+  }
+
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #141E46;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  form button {
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 0;
+    border-radius: 20px;
+    background-color: #BB2525;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  @media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .banner h5 {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+     
+    main aside {
+        align-self: stretch;
+    }
+  }
